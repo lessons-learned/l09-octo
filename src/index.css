@@ -1,0 +1,86 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+
+  :root {
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  }
+
+  #topnav {
+    @apply flex flex-row justify-between items-center px-10 bg-gray-800;
+  }
+
+  #topnav .nav-links {
+    @apply flex justify-center items-center;
+    @apply text-sm leading-5 text-gray-300;
+    @apply py-3 gap-8;
+    white-space: nowrap;
+  }
+
+  #topnav .nav-links img,
+  #breadcrumb .nav-links img {
+    display: inline-flex;
+  }
+
+  #topnav .nav-links .menu-button:last-of-type {
+    padding-left: 28px;
+    background: url(./assets/user.svg) left center no-repeat;
+  }
+
+  #breadcrumb {
+    @apply text-sm px-10 pt-4 font-mono;
+  }
+
+  #breadcrumb .nav-links {
+    @apply text-green-600 flex flex-row gap-2;
+  }
+
+  #breadcrumb .nav-links .menu-button:last-of-type {
+    @apply text-gray-500 pointer-events-none;
+
+  }
+
+  #breadcrumb .nav-links .menu-button:last-of-type img {
+    display: none;
+  }
+
+  header {
+    @apply px-10 py-6 border-b;
+  }
+
+  header h1 {
+    @apply text-4xl font-semibold inline-block pr-4;
+    letter-spacing: -.5px;
+  }
+
+  header .tag {
+    @apply font-mono text-sm text-gray-600 px-2 border border-slate-300 bg-slate-50;
+  }
+
+  .container {
+    @apply p-10;
+    @apply grid grid-flow-row-dense grid-cols-12 mx-auto;
+  }
+
+  .container .create-task-form {
+    @apply col-span-12 md:col-span-8 md:col-start-3;
+    @apply lg:col-span-6 lg:col-start-4;
+    @apply xl:col-span-5 xl:col-start-4;
+  }
+
+  .container .create-task-form label {
+    @apply block text-sm text-gray-800 pb-1 font-semibold;
+  }
+
+  .container .create-task-form label:not(:first-of-type) {
+    @apply pt-8;
+  }
+
+  .container .create-task-form input {
+    @apply block w-full rounded-sm border border-gray-300 pl-7 pr-12 focus:border-indigo-300 focus:ring-indigo-300;
+    @apply px-3 py-2;
+  }
+
+}
