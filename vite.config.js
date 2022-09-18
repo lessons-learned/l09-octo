@@ -3,6 +3,6 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/l09-octo/', //This is the base URL of your website
+  // base: '/repo-name/', 
   plugins: [vue()]
 })

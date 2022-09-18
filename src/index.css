@@ -57,6 +57,7 @@
 
   header .tag {
     @apply font-mono text-sm text-gray-600 px-2 border border-slate-300 bg-slate-50;
+    border-radius: 3px;
   }
 
   .container {
