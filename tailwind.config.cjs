@@ -4,7 +4,13 @@ module.exports = {
   darkMode: 'media', // or 'media' or 'class'
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        indigoVivid: {
+          600: '#3000F0',
+        }
+      },
+    },
   },
   variants: {
     extend: {},

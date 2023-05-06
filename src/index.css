@@ -34,7 +34,7 @@
   }
 
   #breadcrumb .nav-links {
-    @apply text-green-600 flex flex-row gap-2;
+    @apply text-indigoVivid-600 flex flex-row gap-2;
   }
 
   #breadcrumb .nav-links .menu-button:last-of-type {
