@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "express": "^4.22.1",
+    "express": "^4.22.2",
     "vue": "^3.2.37"
   },
   "devDependencies": {
